@@ -1,4 +1,5 @@
 {
+  "name": "layouts",
   "projectType": "library",
   "sourceRoot": "libs/fui/navigate/src",
   "prefix": "hyperconverged",
