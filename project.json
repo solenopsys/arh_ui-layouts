@@ -1,14 +1,14 @@
 {
   "name": "layouts",
   "projectType": "library",
-  "sourceRoot": "libs/fui/navigate/src",
+  "sourceRoot": "packages/uimatrix/layouts/src",
   "prefix": "hyperconverged",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/fui/navigate"],
+      "outputs": ["coverage/packages/uimatrix/layouts"],
       "options": {
-        "jestConfig": "libs/fui/navigate/jest.config.js",
+        "jestConfig": "packages/uimatrix/layouts/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/fui/navigate/src/**/*.ts",
-          "libs/fui/navigate/src/**/*.html"
+          "packages/uimatrix/layouts/src/**/*.ts",
+          "packages/uimatrix/layouts/src/**/*.html"
         ]
       },
       "outputs": ["{options.outputFile}"]
