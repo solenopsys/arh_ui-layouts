@@ -1,30 +1,31 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {Observable} from 'rxjs';
 
 @Component({
-  selector: 'fui-top-pane',
-  templateUrl: './top-pane.component.html',
-  styleUrls: ['./top-pane.component.css']
+    selector: 'fui-top-pane',
+    templateUrl: './top-pane.component.html',
+    styleUrls: ['./top-pane.component.css']
 })
 export class TopPaneComponent implements OnInit {
 
-  @Input()
-  tabs$!: Observable<{ id: string, title: string }[]>;
 
-  @Input()
-  selected!: string | undefined;
+    @Input()
+    tabs$!: Observable<{ id: string, title: string }[]>;
 
-  @Output()
-  tabClick = new EventEmitter<string>();
+    @Input()
+    selected!: string | undefined;
 
-  @Output()
-  menuClick = new EventEmitter();
+    @Output()
+    tabClick = new EventEmitter<string>();
 
-  constructor() {
-  }
+    @Output()
+    menuClick = new EventEmitter();
 
-  ngOnInit(): void {
-  }
+    constructor(@Inject('logo') public logo: string) {
+    }
+
+    ngOnInit(): void {
+    }
 }
 
 
