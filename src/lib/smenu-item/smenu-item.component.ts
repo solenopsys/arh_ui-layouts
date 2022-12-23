@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Store} from "@ngxs/store";
 import {Navigate} from "@ngxs/router-plugin";
-import { MenuItemData } from "../model";
+import {MenuItemData} from "../model";
 
 
 @Component({
-  selector: 'fui-smenu-item',
+  selector: 'ui-smenu-item',
   templateUrl: './smenu-item.component.html',
   styleUrls: ['./smenu-item.component.css']
 })

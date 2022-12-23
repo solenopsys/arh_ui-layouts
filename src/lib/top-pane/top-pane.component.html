@@ -7,21 +7,21 @@
         <!--filter: var(--invertLogo)-->
 
 
-        <fui-tabs style="margin-left: 20px;" [select]="selected" (tabClick)="this.tabClick.emit($event)" [tabs$]="tabs$"></fui-tabs>
+        <ui-tabs style="margin-left: 20px;" [select]="selected" (tabClick)="this.tabClick.emit($event)" [tabs$]="tabs$"></ui-tabs>
 
     </div>
 
 
     <div style="position: absolute;right: 10px; top:5px;">
-        <fui-icon-button [icon]="'/assets/icons/01-Interface-Essential/12-Settings/cog.svg'"
-                         [title]="'Settings'" [routerLink]="'/settings'"></fui-icon-button>
+        <ui-icon-button [icon]="'/assets/icons/01-Interface-Essential/12-Settings/cog.svg'"
+                         [title]="'Settings'" [routerLink]="'/settings'"></ui-icon-button>
 
-        <fui-icon-button (click)="menuClick.emit($event)"
+        <ui-icon-button (click)="menuClick.emit($event)"
                          [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-                         [title]="'Menu'"></fui-icon-button>
-      <fui-icon-button (click)="menuClick.emit($event)"
+                         [title]="'Menu'"></ui-icon-button>
+      <ui-icon-button (click)="menuClick.emit($event)"
                        [icon]="'/assets/icons/01-Interface-Essential/03-Menu/navigation-menu-1.svg'"
-                       [title]="'login'"  [routerLink]="'/login'"></fui-icon-button>
+                       [title]="'login'"  [routerLink]="'/login'"></ui-icon-button>
 
     </div>
 

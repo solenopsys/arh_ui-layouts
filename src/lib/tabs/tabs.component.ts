@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Observable} from 'rxjs';
 
 @Component({
-    selector: 'fui-tabs',
+    selector: 'ui-tabs',
     templateUrl: './tabs.component.html',
     styleUrls: ['./tabs.component.css']
 })

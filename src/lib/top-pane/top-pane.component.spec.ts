@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TopPaneComponent } from './top-pane.component';
+import {TopPaneComponent} from './top-pane.component';
 
 describe('TopPaneComponent', () => {
   let component: TopPaneComponent;

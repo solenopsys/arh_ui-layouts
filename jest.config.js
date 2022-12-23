@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'fui-navigate',
+  displayName: 'ui-navigate',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {

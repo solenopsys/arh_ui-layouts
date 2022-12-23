@@ -2,7 +2,7 @@
   "name": "layouts",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/layouts/src",
-  "prefix": "sc",
+  "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

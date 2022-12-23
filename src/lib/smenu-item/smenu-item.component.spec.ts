@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SMenuItemComponent } from './smenu-item.component';
+import {SMenuItemComponent} from './smenu-item.component';
 
 describe('SMenuItemComponent', () => {
   let component: SMenuItemComponent;

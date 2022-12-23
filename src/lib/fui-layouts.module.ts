@@ -1,26 +1,29 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {SMenuComponent} from "./smenu/smenu.component";
 import {SMenuItemComponent} from "./smenu-item/smenu-item.component";
 import {TopPaneComponent} from "./top-pane/top-pane.component";
 import {TabsComponent} from "./tabs/tabs.component";
 import {RouterModule} from "@angular/router";
 import {SubMenuComponent} from "./sub-menu/sub-menu.component";
-import { FuiIconsModule } from "@solenopsys/uimatrix-icons";
-import { UtilsModule } from "@solenopsys/uimatrix-utils";
+import {UIIconsModule} from "@solenopsys/uimatrix-icons";
+import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
+
+const components = [
+  SMenuComponent,
+  SMenuItemComponent,
+  TopPaneComponent,
+  TabsComponent,
+  SubMenuComponent,
+];
+
 @NgModule({
-  declarations: [
-    SMenuComponent,
-    SMenuItemComponent,
-    TopPaneComponent,
-    TabsComponent,
-    SubMenuComponent,
-  ],
+  declarations: components,
   imports: [
     CommonModule,
     RouterModule,
     UtilsModule,
-    FuiIconsModule,
+    UIIconsModule,
   ],
   exports: [
     SMenuComponent,
@@ -29,4 +32,8 @@ import { UtilsModule } from "@solenopsys/uimatrix-utils";
     SubMenuComponent
   ]
 })
-export class FuiNavigateModule {}
+export class UILayoutsModule {
+  constructor(private ds: DeclaredService) {
+    ds.addComps("@solenopsys/uimatrix-layouts", components)
+  }
+}

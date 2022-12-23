@@ -1,9 +1,9 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { NavigationEnd, Router } from "@angular/router";
-import { MenuItemData } from "../model";
+import {Component, Input, OnInit} from "@angular/core";
+import {NavigationEnd, Router} from "@angular/router";
+import {MenuItemData} from "../model";
 
 @Component({
-  selector: "fui-smenu",
+  selector: "ui-smenu",
   templateUrl: "./smenu.component.html",
   styleUrls: ["./smenu.component.css"]
 })
