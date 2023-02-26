@@ -1,1 +1,1 @@
-export * from './lib/fui-layouts.module'
+export * from './lib/ui-layouts.module'
