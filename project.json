@@ -1,16 +1,16 @@
 {
   "name": "layouts",
   "projectType": "library",
-  "sourceRoot": "packages/uimatrix/layouts/src",
+  "sourceRoot": "packages/uimatrix/ui-layouts/src",
   "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/packages/uimatrix/layouts"
+        "coverage/packages/uimatrix/ui-layouts"
       ],
       "options": {
-        "jestConfig": "packages/uimatrix/layouts/jest.config.js",
+        "jestConfig": "packages/uimatrix/ui-layouts/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/uimatrix/layouts/src/**/*.ts",
-          "packages/uimatrix/layouts/src/**/*.html"
+          "packages/uimatrix/ui-layouts/src/**/*.ts",
+          "packages/uimatrix/ui-layouts/src/**/*.html"
         ]
       },
       "outputs": [
