@@ -1,5 +1,6 @@
 {
   "name": "ui-layouts",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-layouts/src",
   "prefix": "ui",
